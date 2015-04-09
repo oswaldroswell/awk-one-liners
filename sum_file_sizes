@@ -1,0 +1,2 @@
+ls -l | awk '$1=="-rw-r--r--" {x += $5} END {print "Total bytes = " x}'
+# sum the file sizes in bytes of all files in a directory
